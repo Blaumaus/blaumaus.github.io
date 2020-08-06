@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:hsl(262, 44%, 11%);
+    text-align: center;
+}
+
+/* BACKGROUND IMAGE HANDLER */
+#background {
+    z-index: -1;
+    position: fixed;
+    background: url("../images/back.jpg") no-repeat hsl(262, 44%, 11%);
+    background-position: center;
+    filter: blur(15px);
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    min-height: 2000px;
+}
+
+/* AVATAR AREA */
+#avatar > img {
+    width: 130px;
+    height: auto;
+    border-radius: 50%;
+    margin: 4vh;
+}
+
+/* NAME & SMALL DESCRIPTION AREA */
+#name, #minidesc {
+    font-family: sans-serif;
+    font-size: 70px;
+    background: linear-gradient(to right, hsl(266, 67%, 64%), hsl(261, 78%, 48%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#minidesc { 
+    font-size: 30px; 
+    margin: 30px;
+}
+
+/* FULL DESCRIPTION AREA */
+#description {
+    display: inline-block;
+    font-family: sans-serif;
+    color: hsl(261, 85%, 81%);
+    font-size: 20px;
+}
+
+/* BUTTON AREA */
+.button {
+    display: inline-block;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    margin:7px;
+    padding: 10px;
+    font-size: 20px;
+    border: .5px solid hsl(261, 85%, 81%);
+    border-radius: 50px;
+    transition: all .4s ease;
+}
+
+.button:hover {
+    color: hsl(265, 41%, 15%);
+    background-color: hsl(261, 85%, 81%);
+}
+
+/* CONTACTS BUTTON AREA */
+#con {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 50px;
+    background: linear-gradient(to right, hsl(266, 67%, 64%), hsl(261, 78%, 48%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.contact { border: none; }
